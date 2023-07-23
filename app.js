@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const Campground = require("./models/campground");
+
 mongoose.connect("mongodb://localhost:27017/yelpcamp");
 
 const db = mongoose.connection;
@@ -26,5 +27,5 @@ app.get("/makecampground", async (req, res) => {
 });
 
 app.listen(3000, () => {
-    console.log("Servin on port 3000");
+    console.log("Serving on port 3000");
 });
