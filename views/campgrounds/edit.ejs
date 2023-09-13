@@ -18,7 +18,7 @@
     <div class="col-6 offset-3">
         <form action="/campgrounds/<%= campground._id %>?_method=PUT" method="post">
             <div class="mb-3">
-                <label class="form-label" for="title">Title</label>
+                <label class="form-label" for="title">Title:</label>
                 <input
                     class="form-control"
                     type="text"
@@ -28,7 +28,7 @@
                 />
             </div>
             <div class="mb-3">
-                <label class="form-label" for="location">Location</label>
+                <label class="form-label" for="location">Location:</label>
                 <input
                     class="form-control"
                     type="text"
@@ -38,7 +38,7 @@
                 />
             </div>
             <div class="mb-3">
-                <label class="form-label" for="image">Image Url</label>
+                <label class="form-label" for="image">Image Url:</label>
                 <input
                     class="form-control"
                     type="text"
@@ -48,7 +48,7 @@
                 />
             </div>
             <div class="mb-3">
-                <label for="price" class="form-label">Campground Price</label>
+                <label for="price" class="form-label">Campground Price:</label>
                 <div class="input-group">
                     <span class="input-group-text" id="price-label">$</span>
                     <input
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="description">Description</label>
+                <label class="form-label" for="description">Description:</label>
                 <textarea class="form-control" type="text" id="description" name="campground[description]">
 <%= campground.description %></textarea
                 >
@@ -73,6 +73,6 @@
                 <button class="btn btn-info">Submit Changes</button>
             </div>
         </form>
-        <a href="/campgrounds/<%= campground._id %>">Go back</a>
+        <a href="/campgrounds/<%= campground._id %>"><h5>Go back</h5></a>
     </div>
 </div>

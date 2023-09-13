@@ -4,19 +4,19 @@
     <div class="col-6 offset-3">
         <form action="/campgrounds" method="post">
             <div class="mb-3">
-                <label class="form-label" for="title">Title</label>
+                <label class="form-label" for="title">Title:</label>
                 <input class="form-control" type="text" id="title" name="campground[title]" />
             </div>
             <div class="mb-3">
-                <label class="form-label" for="location">Location</label>
+                <label class="form-label" for="location">Location:</label>
                 <input class="form-control" type="text" id="location" name="campground[location]" />
             </div>
             <div class="mb-3">
-                <label class="form-label" for="image">Image Url</label>
+                <label class="form-label" for="image">Image Url:</label>
                 <input class="form-control" type="text" id="image" name="campground[imageUrl]" />
             </div>
             <div class="mb-3">
-                <label for="price" class="form-label">Campground Price</label>
+                <label for="price" class="form-label">Campground Price:</label>
                 <div class="input-group">
                     <span class="input-group-text" id="price-label">$</span>
                     <input
@@ -31,13 +31,13 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label class="form-label" for="description">Description</label>
+                <label class="form-label" for="description">Description:</label>
                 <textarea class="form-control" type="text" id="description" name="campground[description]"></textarea>
             </div>
             <div class="mb-3">
                 <button class="btn btn-success">Add Campground</button>
             </div>
         </form>
-        <a href="/campgrounds">All campgrounds</a>
+        <a href="/campgrounds"><h5>All campgrounds</h5></a>
     </div>
 </div>
